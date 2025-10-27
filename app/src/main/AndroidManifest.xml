@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions for Internet, Location, and Map Access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.spotwarn"
+        tools:targetApi="31">
+
+        <!-- ✅ Google Maps API Key (Add your actual key below) -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDLVx8cRzO_URDI8ez0gJUAGG7FUr-gShU" />
+
+        <!-- Existing Activities -->
+        <activity android:name=".ViewPoliceActivity" android:exported="false" />
+        <activity android:name=".AddPoliceActivity" android:exported="false" />
+        <activity android:name=".FillInfo" android:exported="false" />
+        <activity android:name=".shaketosafety" android:exported="false" />
+        <activity android:name=".AdminSignup" android:exported="false" />
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".AdminDashboard" android:exported="false" />
+        <activity android:name=".AdminLogin" android:exported="false" />
+        <activity android:name=".MainDashboard" android:exported="false" />
+        <activity android:name=".AddUnsafeSpot" android:exported="false" />
+        <activity android:name=".EmergencyActivity" android:exported="false" />
+        <activity android:name=".EventTimelineActivity" android:exported="false" />
+        <activity android:name=".ParkingSpotsActivity" android:exported="false" />
+        <activity android:name=".AddParkingActivity" android:exported="false" />
+        <activity android:name=".ViewParkingActivity" android:exported="false" />
+        <activity android:name=".UserDashboard" android:exported="false" />
+        <activity android:name=".ForgotPasswordActivity" android:exported="false" />
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".PoliceComplaintsActivity" android:exported="false" />
+        <activity android:name=".HelplineActivity" android:exported="false" />
+        <activity android:name=".PoliceInfoActivity" android:exported="false" />
+        <activity android:name=".SafeSpotsActivity" android:exported="false" />
+        <activity android:name=".PoliceDashboardActivity" android:exported="false" />
+
+        <!-- ✅ New Traffic Info Activities -->
+        <activity android:name=".TrafficInfoActivity" android:exported="false" />
+        <!-- (No need to add adapter or model files—they aren’t activities) -->
+
+        <!-- Splash screen launcher -->
+        <activity
+            android:name=".splashscreenbackend"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools">-->
+
+<!--    <application-->
+<!--        android:allowBackup="true"-->
+<!--        android:dataExtractionRules="@xml/data_extraction_rules"-->
+<!--        android:fullBackupContent="@xml/backup_rules"-->
+<!--        android:icon="@mipmap/ic_launcher"-->
+<!--        android:label="@string/app_name"-->
+<!--        android:roundIcon="@mipmap/ic_launcher_round"-->
+<!--        android:supportsRtl="true"-->
+<!--        android:theme="@style/Theme.spotwarn"-->
+<!--        tools:targetApi="31">-->
+<!--        <activity-->
+<!--            android:name=".ViewPoliceActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".AddPoliceActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".FillInfo"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".shaketosafety"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".AdminSignup"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".LoginActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".AdminDashboard"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".AdminLogin"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".MainDashboard"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".AddUnsafeSpot"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".EmergencyActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".EventTimelineActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".ParkingSpotsActivity"-->
+<!--            android:exported="false" />-->
+<!--&lt;!&ndash;        <activity&ndash;&gt;-->
+<!--&lt;!&ndash;            android:name=".ParkingSpot"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:exported="false" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <activity&ndash;&gt;-->
+<!--&lt;!&ndash;            android:name=".ParkingSpotAdapter"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:exported="false" />&ndash;&gt;-->
+<!--        <activity-->
+<!--            android:name=".TrafficInfoActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".UserDashboard"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".ForgotPasswordActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".RegisterActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".ComplaintsActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".HelplineActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".PoliceInfoActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".SafeSpotsActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".PoliceDashboardActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".splashscreenbackend"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--    </application>-->
+
+<!--</manifest>-->

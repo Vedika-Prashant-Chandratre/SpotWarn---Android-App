@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill Your Info"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Your Name"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/etNum1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Emergency Contact 1"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/etNum2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Emergency Contact 2"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/etNum3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Emergency Contact 3"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/etNum4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Emergency Contact 4"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/etNum5"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Emergency Contact 5"
+            android:inputType="phone"/>
+
+        <Button
+            android:id="@+id/btnSaveInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Info"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
